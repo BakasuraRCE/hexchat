@@ -67,7 +67,7 @@ fe_input_add (int sok, int flags, void *func, void *data)
 int
 fe_args (int argc, char *argv[])
 {
-	
+	return g_application_run (G_APPLICATION (hex_chat_app_new ()), argc, argv);
 }
 
 void
