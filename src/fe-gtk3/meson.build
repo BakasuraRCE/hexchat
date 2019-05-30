@@ -1,6 +1,7 @@
 hexchat_gtk3_sources = [
   'fe-gtk3.c',
   'app.c',
+  'appwin.c'
 ]
 
 gtk_dep = dependency ('gtk+-3.0', version: '>= 3.24')
