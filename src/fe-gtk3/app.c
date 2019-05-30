@@ -37,7 +37,10 @@ hex_chat_app_init (HexChatApp *app)
 static void
 hex_chat_app_activate (GApplication *app)
 {
+	HexChatAppWindow *win;
 
+	win = hex_chat_app_window_new (HEX_CHAT_APP (app));
+	gtk_window_present (GTK_WINDOW (win));
 }
 
 static void
